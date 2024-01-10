@@ -120,6 +120,12 @@ app.post("/login", async (req,res) => {
     })
 })
 
+app.get("/testing", (req,res) => {
+    return res.json({
+        msg: "Working route"
+    })
+})
+
 app.listen(process.env.PORT, () => {
     console.log('🚀🚀 Server running on : ', process.env.PORT)
 })
